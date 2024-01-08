@@ -1,0 +1,30 @@
+GET http://localhost:3000/todos/?status=TO%20DO
+
+GET http://localhost:3000/todos/?priority=Average
+
+GET http://localhost:3000/todos/?priority=HIGH&status=IN%20PROGRESS
+
+GET http://localhost:3000/todos/?search_q=Buy
+
+GET http://localhost:3000/todos/?categroy=WORK&status=DONE
+
+GET http://localhost:3000/todos/?categroy=HOME
+
+GET http://localhost:3000/todos/?categroy=LEARNING&priority=HIGH
+
+GET http://localhost:3000/todos/13/
+
+GET http://localhost:3000/agenda/?date=2021-13-22
+
+POST http://localhost:3000/todos/
+Content-Type: application/json
+
+{
+"id": 8,
+ "todo": "ccbp",
+ "priority": "LOW",
+ "status": "TO DO",
+ "category": "HOME",
+ "dueDate": "2023-02-22"
+
+}
